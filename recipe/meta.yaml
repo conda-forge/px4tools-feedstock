@@ -21,6 +21,7 @@ requirements:
   build:
     - python
     - setuptools
+    - pandas
   run:
     - scipy
     - numpy
