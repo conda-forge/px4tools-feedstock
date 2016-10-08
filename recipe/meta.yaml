@@ -21,7 +21,11 @@ requirements:
   build:
     - python
     - setuptools
+    - scipy
+    - numpy
     - pandas
+    - matplotlib
+    - basemap
   run:
     - scipy
     - numpy
