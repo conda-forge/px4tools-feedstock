@@ -22,6 +22,7 @@ requirements:
     - python
     - setuptools
   run:
+    - python
     - scipy
     - numpy
     - pandas
