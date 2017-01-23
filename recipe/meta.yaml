@@ -30,6 +30,8 @@ requirements:
     - basemap
 
 test:
+  source_files:
+    - px4tools/*
   requires:
     - nose
   commands:
