@@ -30,12 +30,10 @@ requirements:
     - basemap
 
 test:
-  source_files:
-    - {{ SRC_DIR }}/*
-  requires:
-    - nose
+  import:
+    - px4tools
   commands:
-    - nosetests -sv {{ SRC_DIR }}
+    - px42csv -h
 
 about:
   home: https://github.com/dronecrew/px4tools
