@@ -31,7 +31,7 @@ requirements:
 
 test:
   source_files:
-    - {{ SRC_DIR }}
+    - {{ SRC_DIR }}/*
   requires:
     - nose
   commands:
@@ -46,3 +46,5 @@ about:
 extra:
   recipe-maintainers:
     - jgoppert
+
+#  vim: set et fenc=utf-8 ff=unix sts=0 sw=2 ts=2 : 
