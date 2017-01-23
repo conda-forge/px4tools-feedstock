@@ -31,7 +31,7 @@ requirements:
 
 test:
   source_files:
-    - px4tools/*
+    - {{ SRC_DIR }}
   requires:
     - nose
   commands:
