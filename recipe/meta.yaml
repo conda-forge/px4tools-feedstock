@@ -1,6 +1,6 @@
 {% set name = "px4tools" %}
-{% set version = "0.4.9" %}
-{% set sha256 = "edaeed4d2d8dc51dc9f790e84e355df3e350ce63889879e4b91725a0861e191c" %}
+{% set version = "0.7.7" %}
+{% set sha256 = "5f04382ce192e99a6b70f85183a1c1c19f026034f81c7612d36e1ea41ab6ea7f" %}
 
 package:
   name: {{ name|lower }}
@@ -30,10 +30,10 @@ requirements:
     - basemap
 
 test:
-  requires:
-    - nose
+  import:
+    - px4tools
   commands:
-    - nosetests -sv {{ SRC_DIR }}
+    - px42csv -h
 
 about:
   home: https://github.com/dronecrew/px4tools
@@ -44,3 +44,5 @@ about:
 extra:
   recipe-maintainers:
     - jgoppert
+
+#  vim: set et fenc=utf-8 ff=unix sts=0 sw=2 ts=2 : 
