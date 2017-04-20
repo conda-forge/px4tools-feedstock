@@ -15,12 +15,17 @@ build:
   number: 0
   entry_points:
     - px42csv=px4tools.px42csv:main
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: python setup.py install --record record.txt
 
 requirements:
   build:
     - python
     - setuptools
+    - scipy
+    - numpy
+    - pandas
+    - matplotlib
+    - basemap
   run:
     - python
     - scipy
