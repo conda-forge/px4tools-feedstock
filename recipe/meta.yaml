@@ -1,6 +1,6 @@
 {% set name = "px4tools" %}
-{% set version = "0.7.7" %}
-{% set sha256 = "5f04382ce192e99a6b70f85183a1c1c19f026034f81c7612d36e1ea41ab6ea7f" %}
+{% set version = "0.9.6" %}
+{% set sha256 = "9befbaeee55a0a3f4d29d1027974667bb64a64788878edd616625ffae6531491" %}
 
 package:
   name: {{ name|lower }}
