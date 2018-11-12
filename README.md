@@ -3,20 +3,19 @@ About px4tools
 
 Home: https://github.com/dronecrew/px4tools
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
 Feedstock license: BSD 3-Clause
 
-Summary: Python log crunching for PX4.
+Summary: Python log crunching for PX4
 
 
 
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/px4tools-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/px4tools-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/px4tools-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/px4tools-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/px4tools-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/px4tools-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/px4tools-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/px4tools-feedstock)
 
 Current release info
 ====================
