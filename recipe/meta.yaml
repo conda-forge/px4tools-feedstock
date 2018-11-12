@@ -1,26 +1,23 @@
-{% set name = "px4tools" %}
 {% set version = "0.7.7" %}
-{% set sha256 = "5f04382ce192e99a6b70f85183a1c1c19f026034f81c7612d36e1ea41ab6ea7f" %}
 
 package:
-  name: {{ name|lower }}
+  name: px4tools
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/dronecrew/px4tools/archive/v{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: 5f04382ce192e99a6b70f85183a1c1c19f026034f81c7612d36e1ea41ab6ea7f
 
 build:
   number: 1000
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv"
   entry_points:
-    - px42csv=px4tools.px42csv:main
-  script: python setup.py install --single-version-externally-managed --record record.txt
+    - px42csv = px4tools.px42csv:main
 
 requirements:
-  build:
+  host:
     - python
-    - setuptools
+    - pip
   run:
     - python
     - scipy
@@ -30,7 +27,7 @@ requirements:
     - basemap
 
 test:
-  import:
+  imports:
     - px4tools
   commands:
     - px42csv -h
@@ -39,10 +36,8 @@ about:
   home: https://github.com/dronecrew/px4tools
   license: BSD 3-Clause
   license_file: LICENSE
-  summary: 'Python log crunching for PX4.'
+  summary: 'Python log crunching for PX4'
 
 extra:
   recipe-maintainers:
     - jgoppert
-
-#  vim: set et fenc=utf-8 ff=unix sts=0 sw=2 ts=2 : 
