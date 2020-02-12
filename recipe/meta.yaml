@@ -9,7 +9,7 @@ source:
   sha256: 602aeddbc74244aec648a19c90bc9d81ecbfc2bd997302eb072a62e6d4a91e68
 
 build:
-  number: 1000
+  number: 1001
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv"
   entry_points:
@@ -22,7 +22,7 @@ requirements:
   run:
     - python >=3
     - control >=0.7.0
-    - matplotlib >=2.2.2
+    - matplotlib-base >=2.2.2
     - numpy >=1.13.3
     - pandas >=0.23.1
     - python-dateutil >=2.5.0
